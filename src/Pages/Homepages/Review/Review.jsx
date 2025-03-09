@@ -13,7 +13,7 @@ const Review = () => {
     useEffect(() => {
         const CollegeBook = async () => {
             try {
-                const res = await axiosPublic.get('/feedback');
+                const res = await axiosPublic.get('/collegefeedback');
                 setReview(res.data);
                 console.log(res.data);
             } catch (error) {

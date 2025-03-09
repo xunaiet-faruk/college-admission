@@ -18,7 +18,7 @@ const FeedbackModal = ({ isOpen, onClose, onSubmit }) => {
         const Alldata = { name, designation, rating, feedback,email }
         console.log(Alldata);
         try {
-            const res = await axiosPublic.post('/feedback', Alldata);
+            const res = await axiosPublic.post('/collegefeedback', Alldata);
             console.log(res.data,Alldata);
             if (res.data.insertedId) {
                 Swal.fire({

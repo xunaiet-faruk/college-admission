@@ -69,53 +69,59 @@ const Mycollege = () => {
                 </div>
             </div>
 
-            <div className="mt-32 px-12">
-                <div className="overflow-x-auto">
-                    <table className="table">
+            <div className="mt-32 flex flex-col justify-center items-center w-full max-w-screen-2xl  mx-auto">
+
+                <div className="overflow-x-auto w-full">
+                    <table className="min-w-[90%] shadow-md  mx-auto   my-6">
                         <thead>
-                            <tr className="text-xl text-black bg-gray-200">
-                                <th>Profile</th>
-                                <th>Sub/Date</th>
-                                <th>Address</th>
-                                <th>Feedback</th>
+                            <tr className="bg-gray-100 text-black">
+                                <th className="py-3 px-6 text-left border-b">Profile</th>
+                                <th className="py-3 px-6 text-left border-b">Email</th>
+                                <th className="py-3 px-6 text-left border-b">Mobile</th>
+                                <th className="py-3 px-6 text-left border-b">Subject</th>
+                                <th className="py-3 px-6  border-b text-end">Address</th>
+                                <th className="py-3 px-6  border-b text-end">Review</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            {booking.map((item, index) => (
-                                <tr key={index}>
-                                    <td className="text-xl">
-                                        <div className="flex items-center gap-3">
-                                            <div className="">
-                                                <div className="mask mask-squircle h-16 w-16">
-                                                    <img  src={item?.image} alt="" />
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div className="font-bold">{item?.email}</div>
-                                                <div className="text-sm opacity-80">{item?.mobile}</div>
-                                            </div>
-                                        </div>
+                        <tbody >
+                            {booking.length > 0 ? (
+                                booking.map((book, index) => (
+                                    <tr key={index} className="hover:bg-gray-50 transition duration-300">
+                                        <td className="py-4 px-6 border-b border-gray-300">
+                                            <img className="w-16 h-16 rounded-full" src={book?.image} alt="" />
+
+                                        </td>
+                                        <td className="py-4 px-6 border-b border-gray-300 ">{book.email}</td>
+                                        <td className="py-4 px-6 border-b border-gray-300">{book.mobile}</td>
+                                        <td className="py-4 px-6 border-b border-gray-300">{book.subject}</td>
+                                        <td className="py-4 px-6  border-b border-gray-300 text-end">{book.address}</td>
+                                        <td className="py-4 px-6 border-b border-gray-300 text-end">
+
+                                            <button
+                                                className="border-b-2 border-[#ffc333] px-5 rounded-xl"
+                                                onClick={() => handleFeedbackClick(book)}
+                                            >
+                                                Review
+                                            </button>
+
+                                        </td>
+                                        
+                                    </tr>
+                                ))
+                            ) : (
+                                <tr>
+                                    <td colSpan="4" className="text-center py-4 text-gray-500">
+                                        No Booking Found
                                     </td>
-                                    <td>
-                                        {item?.subject}
-                                        <br />
-                                        <span className="text-black">{item?.date}</span>
-                                    </td>
-                                    <td className="text-black">{item?.address}</td>
-                                    <th>
-                                        <button
-                                            className="border-b-2 border-[#ffc333] px-5 rounded-xl"
-                                            onClick={() => handleFeedbackClick(item)}
-                                        >
-                                            Review
-                                        </button>
-                                    </th>
                                 </tr>
-                            ))}
+                            )}
                         </tbody>
+
                     </table>
                 </div>
+
             </div>
+
 
             <FeedbackModal
                 isOpen={isModalOpen}

@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosPublic = axios.create({
-    baseURL: 'https://college-book-srvices-database.vercel.app'
+    baseURL: 'http://localhost:5000'
 });
 
 const Useaxios = () => {
