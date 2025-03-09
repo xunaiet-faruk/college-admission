@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Artificial Intelligence in Modern Education",
+        "image": "https://i.ibb.co/VvqryMm/image.png",
+        "link": "https://example.com/research1",
+        "researchPaperDate": "2023-01-15",
+        "Details": "This paper explores the integration of artificial intelligence in modern educational systems. It highlights the benefits of AI in personalized learning, automated grading, and administrative efficiency, providing a comprehensive overview of the current trends and future prospects."
+    },
+    {
+        "title": "The Impact of Climate Change on Marine Life",
+        "image": "https://i.ibb.co/bJVRRY1/image.png",
+        "link": "https://example.com/research2",
+        "researchPaperDate": "2023-02-20",
+        "Details": "This research delves into the effects of climate change on marine ecosystems. It examines the consequences of rising sea temperatures, ocean acidification, and habitat loss on marine biodiversity, offering insights into mitigation strategies and conservation efforts."
+    },
+    {
+        "title": "Quantum Computing: The Future of Technology",
+        "image": "https://i.ibb.co/09GPC78/image.png",
+        "link": "https://example.com/research3",
+        "researchPaperDate": "2023-03-10",
+        "Details": "An exploration of the advancements in quantum computing, this paper discusses the potential applications and challenges of this emerging technology. It covers the principles of quantum mechanics, the development of quantum algorithms, and the future implications for various industries."
+    },
+    {
+        "title": "Renewable Energy Sources and Their Benefits",
+        "image": "https://i.ibb.co/GvCd86N/image.png",
+        "link": "https://example.com/research4",
+        "researchPaperDate": "2023-04-05",
+        "Details": "This study examines various renewable energy sources, including solar, wind, and hydroelectric power. It highlights the environmental and economic benefits of transitioning to renewable energy, as well as the challenges and potential solutions for widespread adoption."
+    },
+    {
+        "title": "Advancements in Genetic Engineering",
+        "image": "https://i.ibb.co/vYTnxCW/image.png",
+        "link": "https://example.com/research5",
+        "researchPaperDate": "2023-05-25",
+        "Details": "Focusing on recent advancements in genetic engineering, this research discusses techniques such as CRISPR and gene therapy. It explores the ethical considerations, potential medical applications, and future prospects of genetic modifications in improving human health and agriculture."
+    },
+    {
+        "title": "Cybersecurity Threats in the Digital Age",
+        "image": "https://i.ibb.co/FXwVfjk/image.png",
+        "link": "https://example.com/research6",
+        "researchPaperDate": "2023-06-15",
+        "Details": "This paper provides an in-depth analysis of current cybersecurity threats and strategies to mitigate them. It covers various types of cyber attacks, the importance of cybersecurity measures, and the role of government and private sectors in ensuring digital safety."
+    }
+]

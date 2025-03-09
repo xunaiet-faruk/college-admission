@@ -6,7 +6,7 @@ const CollegeDetails = () => {
     const { id } = useParams();
     const [collegeDetails, setCollegeDetails] = useState(null);
     useEffect(() => {
-        fetch('https://college-book-srvices-database.vercel.app/collegeView')
+        fetch('http://localhost:5000/collegeView')
             .then(res => res.json())
             .then(data => {
 

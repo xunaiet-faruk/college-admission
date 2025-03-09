@@ -19,7 +19,7 @@ const CollegeCard = () => {
                         <div className="relative flex h-48 w-full justify-center lg:h-[260px]">
                             <div className="absolute left-4 right-4 top-4 flex justify-end">
                               
-                                <button className="rounded-xl border-b-2 hover:bg-black  border-[#ffc333] px-3 py-1 font-medium text-white duration-200 hover:bg-[#0095FF]/90">{cards?.name}</button>
+                                <button className="rounded-xl border-b-2   border-[#ffc333] px-3 py-1 font-medium text-white duration-200 hover:bg-[#0095FF]/90=">{cards?.name}</button>
                             </div>
                             <img width={260} height={260} className="h-full w-full rounded-lg bg-black/40" src={cards?.image} alt="card navigate ui" />
                         </div>

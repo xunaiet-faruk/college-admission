@@ -1,0 +1,26 @@
+[
+    {
+        "image": "https://i.ibb.co/9pYGsQv/University-of-Toulouse.jpg",
+        "name": "Toulouse College",
+        "admissionDates": "2024-09-01 to 2024-09-30",
+        "events": "Orientation Day",
+        "researchHistory": "Springfield University has a strong focus on environmental science research with numerous published papers on climate change.",
+        "sports": "Soccer"
+    },
+    {
+        "image": "https://i.ibb.co/QH4VCxP/image.png",
+        "name": "Clark College",
+        "admissionDates": "2024-08-15 to 2024-09-15",
+        "events": "Spring Fest",
+        "researchHistory": "Clark Colleg is renowned for its research in artificial intelligence and machine learning, contributing significantly to the tech industry.",
+        "sports": "Track and Field"
+    },
+    {
+        "image": "https://i.ibb.co/kyh3DJj/image.png",
+        "name": "Dhaka College",
+        "admissionDates": "2024-07-01 to 2024-08-01",
+        "events": "Hackathon",
+        "researchHistory": "Dhaka College excels in robotics and engineering research, with state-of-the-art labs and innovation hubs.",
+        "sports": "Golf"
+    }
+]

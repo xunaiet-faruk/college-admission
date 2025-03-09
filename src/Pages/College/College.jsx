@@ -13,7 +13,7 @@ const College = () => {
     }
 
     useEffect(() => {
-        fetch('https://college-book-srvices-database.vercel.app/collegeView')
+        fetch('http://localhost:5000/collegeView')
             .then(res => res.json())
             .then(data => setCollegeCard(data));
     }, []);
