@@ -44,6 +44,10 @@ export const router = createBrowserRouter([
                 element:<Mycollege/>
             },
             {
+                path:'/profile',
+                element:<ProfileDetails/>
+            },
+            {
                 path:'/edit',
                 element:<ProfileDetails/>
             }

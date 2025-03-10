@@ -24,21 +24,12 @@ const College = () => {
 
             <div
                 className="hero min-h-screen"
-                style={{ backgroundImage: "url(https://i.ibb.co/87BPcd7/1-3.jpg)" }}
+                style={{ backgroundImage: "url(https://i.ibb.co.com/Z6DYCqDW/freepik-adjust-57723.png)" }}
             >
                 <div className="hero-overlay bg-opacity-60"></div>
-                <div className="hero-content text-neutral-content text-center">
-                    <div className="space-y-6">
-                        <h1 className="text-6xl font-semibold text-white">See Your <span className='text-[#ffc333]'>Best</span> College</h1>
-                        <p className="text-white text-md">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque maiores doloribus assumenda.<br />
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, voluptate.
-                        </p>
-                        <button className="btn btn-primary justify-center mx-auto ">Get Started</button>
-                    </div>
-                </div>
+                
             </div>
-            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 max-w-screen-xl mx-auto gap-12 mt-52">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 max-w-screen-xl mx-auto gap-12 mt-52 mb-20">
                 {collegeCard?.map((cards, index) => (
                     <div key={index} className="w-full space-y-3 rounded-xl backdrop-blur-2xl hover:shadow-[#e8d9b7] p-4 shadow-lg dark:bg-[#18181B]">
                         <div className="relative flex h-48 w-full justify-center lg:h-[260px]">

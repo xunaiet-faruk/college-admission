@@ -30,7 +30,7 @@ const Navbar = () => {
 
     return (
         <div>
-            <nav className="flex items-center justify-between px-4 py-2 bg-gray-50">
+            <nav className="flex items-center justify-between px-4 py-2 bg-[#f6f6f6]">
                 <div className="scale-100 cursor-pointer rounded-2xl px-3 py-2 text-xl font-semibold text-white transition-all duration-200 hover:scale-110">
                     <img className='w-14' src="https://i.ibb.co/K69hGj1/image.png" alt="" />
                 </div>
@@ -78,15 +78,34 @@ const Navbar = () => {
                     <li>
                         {user ? (
                             <>
-                                <div className="dropdown dropdown-bottom dropdown-end" ref={dropDownMenuRef}>
-                                    <div tabIndex={0} role="button" className="m-1">
-                                        <p className='font-semibold'>{user.displayName}</p>
-                                    </div>
-                                    <ul tabIndex={0} className="dropdown-content menu backdrop-blur-md border-2  text-[16px]   rounded-box z-20 w-52 p-2 shadow">
-                                        <li className='text-white hover:text-yellow-400'><Link onClick={handleLogout}>Logout</Link></li>
-                                        <Link className='text-white hover:text-yellow-400' to={'/edit'}><li><a>Edit</a></li></Link>
-                                    </ul>
-                                </div>
+                                   
+                                  <div className='flex gap-10'>
+                                 
+                                        <li className="group flex  cursor-pointer flex-col font-semibold text-[18px]  text-gray-500 ">
+                                            <NavLink
+                                            to="/profile"
+                                                className={({ isActive, isPending }) =>
+                                                    isPending ? "pending" : isActive ? "active" : ""
+                                                }
+                                            >
+                                               {user?.displayName}<span className="mt-[2px] h-[3px]  w-[0px] rounded-full bg-[#ffc333]  transition-all duration-300 group-hover:w-full"></span>
+                                            </NavLink>
+                                      
+                                    </li>
+                                        <li className="group flex  cursor-pointer flex-col font-semibold text-[18px] pb-1 text-red-500 ">
+                                            <NavLink
+                                                to="/mycollege"
+                                                className={({ isActive, isPending }) =>
+                                                    isPending ? "pending" : isActive ? "active" : ""
+                                                }
+                                            >
+                                            <Link onClick={handleLogout}>Logout</Link><span className="mt-[2px] h-[3px]  w-[0px] rounded-full bg-[#ffc333]  transition-all duration-300 group-hover:w-full"></span>
+                                            </NavLink>
+                                      
+                                    </li>
+                                  </div>
+                                    
+                                
                             </>
                         ) : (
                             <li className="group flex  cursor-pointer flex-col font-semibold">

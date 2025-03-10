@@ -74,7 +74,7 @@ const LoginAndRegister = () => {
 
     return (
         <div>
-            <div className="mt-32 -mb-32 mx-auto w-full max-w-xl overflow-hidden rounded-lg border bg-white shadow-2xl dark:border-zinc-700 dark:bg-zinc-900">
+            <div className="mt-32 mb-32 mx-auto w-full max-w-xl overflow-hidden rounded-lg border bg-white shadow-2xl dark:border-zinc-700 dark:bg-zinc-900">
                 <div className={`flex select-none gap-2 border-b p-2.5 *:flex-1 *:rounded-md *:border *:p-2 *:text-center *:uppercase *:shadow-inner *:outline-none dark:border-zinc-70 *:dark:border-zinc-600 ${signUp ? 'last-of-type:*:bg-[#ffc333] last-of-type:*:text-white' : 'first-of-type:*:bg-[#ffc333] first-of-type:*:text-white'}`}>
                     <button onClick={() => setSignUp(false)}>signin</button>
                     <button onClick={() => setSignUp(true)}>signup</button>

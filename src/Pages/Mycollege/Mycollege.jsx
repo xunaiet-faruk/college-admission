@@ -48,28 +48,19 @@ const Mycollege = () => {
     return (
         <div>
             <div
-                className="hero min-h-screen"
+                className="h-[800px]"
                 style={{
-                    backgroundImage: "url(https://i.ibb.co/GRCSvr6/image.png)",
+                    backgroundImage: "url(https://i.ibb.co.com/S1Pj0x4/image.png)",
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center",
                 }}
             >
                 <div className="hero-overlay bg-opacity-60"></div>
-                <div className="hero-content text-neutral-content text-center">
-                    <div className="">
-                        <h1 className="mb-7 text-6xl font-bold">
-                            See Your <span className="text-[#ffc333]">Booking</span> College{' '}
-                        </h1>
-                        <p className="mb-7">
-                            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                            quasi. In deleniti eaque aut repudiandae et a id nisi. Lorem ipsum dolor sit, amet consectetur
-                            adipisicing elit. Error, inventore.
-                        </p>
-                        <button className="btn btn-primary justify-center mx-auto">Get Started</button>
-                    </div>
-                </div>
+               
             </div>
 
-            <div className="mt-32 flex flex-col justify-center items-center w-full max-w-screen-2xl  mx-auto">
+            <div className="mt-32 flex flex-col justify-center items-center w-full max-w-screen-2xl  mx-auto mb-20">
 
                 <div className="overflow-x-auto w-full">
                     <table className="min-w-[90%] shadow-md  mx-auto   my-6">

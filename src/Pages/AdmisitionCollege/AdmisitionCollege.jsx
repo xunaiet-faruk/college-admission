@@ -72,23 +72,14 @@ const AdmisitionCollege = () => {
             <div
                 className="hero min-h-screen"
                 style={{
-                    backgroundImage: "url(https://i.ibb.co/M5jXJMy/image.png)",
+                    backgroundImage: "url(https://i.ibb.co.com/b55v7F14/freepik-adjust-35885.png)",
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center",
                 }}
             >
                 <div className="hero-overlay bg-opacity-60"></div>
-                <div className="hero-content text-neutral-content text-center">
-                    <div className="">
-                        <h1 className="mb-7 text-6xl font-bold">
-                            Choose Your <span className="text-[#ffc333]">Best</span> College{' '}
-                        </h1>
-                        <p className="mb-7">
-                            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                            quasi. In deleniti eaque aut repudiandae et a id nisi. Lorem ipsum dolor sit, amet consectetur
-                            adipisicing elit. Error, inventore.
-                        </p>
-                        <button className="btn btn-primary justify-center mx-auto">Get Started</button>
-                    </div>
-                </div>
+                
             </div>
 
             {/* Admission Form Modal */}
@@ -187,7 +178,7 @@ const AdmisitionCollege = () => {
             )}
 
             {/* College List */}
-            <div className="flex flex-wrap max-w-screen-xl mx-auto gap-6 mt-32 justify-center items-center">
+            <div className="flex flex-wrap max-w-screen-xl mx-auto gap-6 mt-32 justify-center items-center mb-20">
                 {college.map((item, index) => (
                     <div key={index} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
                         <div className="text-center">

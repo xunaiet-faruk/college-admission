@@ -41,31 +41,20 @@ const ProfileDetails = () => {
                 className="hero min-h-screen"
                 style={{ backgroundImage: "url(https://i.ibb.co/RvBmK21/image.png)" }}
             >
-                <div className="hero-overlay bg-opacity-60"></div>
-                <div className="hero-content text-neutral-content text-center">
-                    <div className="">
-                        <h1 className="mb-7 text-6xl font-bold">
-                            See Your <span className="text-[#ffc333]">Profile</span> Details{' '}
-                        </h1>
-                        <p className="mb-7">
-                            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                            quasi. In deleniti eaque aut repudiandae et a id nisi. Lorem ipsum dolor sit, amet consectetur
-                            adipisicing elit. Error, inventore.
-                        </p>
-                        <button className="btn btn-primary justify-center mx-auto">Get Started</button>
-                    </div>
-                </div>
+             
+              <h1 className="text-6xl text-center text-yellow-400 font-bold pt-[20%]">Profile Details</h1>
             </div>
 
-            <div className="mt-32 px-12">
-                <div className="overflow-x-auto">
-                    <table className="table">
+            <div className="mt-32 px-12 ">
+
+                <div className="overflow-x-auto mb-12">
+                    <table className="min-w-[90%] shadow-md  border mx-auto border-gray-100  my-6">
                         <thead>
-                            <tr className="text-xl text-black bg-gray-200">
-                                <th>Profile</th>
-                                <th>Sub/Date</th>
-                                <th>Address</th>
-                                <th>Edit</th>
+                            <tr className="bg-gray-200 text-black">
+                                <th className="py-3 px-6 text-left border-b">Profile</th>
+                                <th className="py-3 px-6 text-left border-b">Subject </th>
+                                <th className="py-3 px-6 text-left border-b">College</th>
+                                <th className="py-3 px-6  border-b ">Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -73,14 +62,10 @@ const ProfileDetails = () => {
                                 <tr key={index}>
                                     <td className="text-xl">
                                         <div className="flex items-center gap-3">
-                                            <div className="">
-                                                <div className="mask mask-squircle h-12 w-12">
-                                                    <img src={user?.photoURL} alt="" />
-                                                </div>
-                                            </div>
+                                            
                                             <div>
-                                                <div className="font-bold">{item?.email}</div>
-                                                <div className="text-sm opacity-80">{item?.mobile}</div>
+                                                <div className="font-bold p-1">{item?.email}</div>
+                                                <div className="text-sm opacity-80 p-1">{item?.mobile}</div>
                                             </div>
                                         </div>
                                     </td>
@@ -92,7 +77,7 @@ const ProfileDetails = () => {
                                     <td className="text-black">{item?.address}</td>
                                     <th>
                                         <button
-                                            className="border-[#ffc333] border-b rounded-xl px-5 hover:bg-[#ffc333] hover:text-white"
+                                            className="border-[#ffc333] border-b rounded-xl px-5  hover:bg-[#ffc333] hover:text-white"
                                             onClick={() => handleEditClick(item)}
                                         >
                                             Edit
@@ -100,10 +85,13 @@ const ProfileDetails = () => {
                                     </th>
                                 </tr>
                             ))}
+                           
                         </tbody>
                     </table>
                 </div>
+
             </div>
+          
 
             <ProfileEdit
                 isOpen={isEditModalOpen}
